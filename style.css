@@ -1,0 +1,377 @@
+:root {
+  --effect: hover 1s linear infinite;
+}
+* {
+  margin: 0;
+}
+
+#loader {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #282120;
+  align-items: center;
+  justify-content: center;
+}
+/*
+div {
+  text-align: center;
+}
+*/
+.letter {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4em;
+  font-family: arial;
+  font-weight: 600;
+  transform: scale(0.5);
+  color: #121212;
+  -webkit-text-stroke: 2px gray;
+}
+
+.letter:nth-child(1) {
+  animation: var(--effect);
+}
+
+.letter:nth-child(2) {
+  animation: var(--effect) 0.125s;
+}
+
+.letter:nth-child(3) {
+  animation: var(--effect) 0.25s;
+}
+
+.letter:nth-child(4) {
+  animation: var(--effect) 0.375s;
+}
+
+.letter:nth-child(5) {
+  animation: var(--effect) 0.5s;
+}
+
+.letter:nth-child(6) {
+  animation: var(--effect) 0.675s;
+}
+
+.letter:nth-child(7) {
+  animation: var(--effect) 0.75s;
+}
+
+@keyframes hover {
+  0% {
+    transform: scale(0.5);
+    color: #121212;
+    -webkit-text-stroke: 2px gray;
+  }
+
+  20% {
+    transform: scale(1);
+    color: pink;
+    -webkit-text-stroke: 3px red;
+    filter: drop-shadow(0 0 1px black) drop-shadow(0 0 1px black)
+      drop-shadow(0 0 3px red) drop-shadow(0 0 5px red) hue-rotate(10turn);
+  }
+
+  50% {
+    transform: scale(0.5);
+    color: #121212;
+    -webkit-text-stroke: 2px gray;
+  }
+}
+/*START HEADER*/
+.header{
+  weight: 100%;
+  height: 601px;
+  background-image: url("img/snowy-mountains-reflect-in-water-at-sunrise.jpg");
+  background-size: cover;
+}
+.nav-main{
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.nav-container{
+  width: 86%;
+  height: 70px;
+  margin: auto;
+  padding-top: 5px;
+}
+/*NAME IN VAR(logo)*/
+.brand-name{
+  width: 119px;
+  height: 37px;
+  padding: 20px;
+  justify-content: left;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: top;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+/*Social*/
+.icons-social{
+  width: 230px;
+  height: 37px; 
+  margin: auto;
+  margin-top: 20px;
+  float: right;
+}
+.icons-social a i{
+  font-size: 29px;
+  justify-content: space-between;
+  color: #fff;
+}
+.s-icons{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.text-rotate {
+  padding: 4em 2em;
+  font: normal 50px/50px Montserrat, sans-serif;
+  color: #999;
+}
+.text-rotate p {
+  font-size: 70px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+}
+.text-rotate b {
+  float: left;
+  overflow: hidden;
+  height: 50px;
+  top: 40px;
+}
+.text-rotate .sub-text {
+  font-size: 60px;
+  display: inline-block;
+  color: #e74c3c;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+/*animation*/
+-webkit-animation:move 5s;
+   -moz-animation:move 5s;
+    -ms-animation:move 5s;
+     -o-animation:move 5s;
+        animation:move 5s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+   -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+     -o-animation-delay:1s;
+        animation-delay:1s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+.parallax{
+  width: 100%;
+  height: 250px;
+  background-image: url("img/parallax1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phrase{
+  color: #fff;
+  font-size: 21px;
+}
+.Iam{
+  width: 100%;
+  height: 660px;
+  background: #f2f2f1;
+  display: inline-block;
+}
+.container-Iam{
+  width: 100%;
+  height: 660px;
+  margin: auto;
+}
+.myPhoto{
+  width: 45%;
+  height: 660px;
+  background-size: cover;
+  background-image: url("img/myPhoto.jpg");
+  display: inline-block;
+  vertical-align: top;
+}
+.info{
+  width: 52%;
+  height: 660px;
+  display: inline-block;
+  vertical-align: top;
+}
+.container-title{
+  float: right;
+  margin-right: 120px;
+  margin-top: 25px;
+}
+.title{
+  font: 44px 'jaapokki_regular';
+  color: #2ecc71;
+  text-transform: uppercase;
+}
+.infoCenter{
+  width: 83%;
+  height: 435px;
+  margin: auto;
+  margin-bottom: auto;
+  padding-top: 95px;
+  margin-bottom: 15px;
+}
+.infoCenter p{
+  font: 16px 'roboto_slabregular';
+  color: #919191;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+/*Modal container*/
+.container-portafolio{
+  background: #004369;
+}
+.portafolio-head{
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+}
+.titlePortafolio{
+  padding: 20px;
+  font-size: 40px;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin: 0 1em;
+}
+.images img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.images img:hover {
+  transform: scale(0.9);
+}
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  z-index: 1;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+.modalContent {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modalImg {
+  width: 80%;
+  max-width: 700px;
+}
+.modalTxt {
+  margin-top: 1em;
+}
+.modalNav {
+  margin-top: 1em;
+}
+.modalNav button {
+  padding: 10px 45px;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.nextBtn {
+  margin-left: 1em;
+}
+.close {
+  position: absolute;
+  color: #fff;
+  top: 1em;
+  right: 1.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.modal.appear {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal.appear .modalImg,
+.modal.appear .modalTxt {
+  animation: zoom 0.3s linear;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
